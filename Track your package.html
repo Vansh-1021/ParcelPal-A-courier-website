@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ParcelPal - Courier Tracking</title>
+  <link rel="stylesheet" type="text/css" href="css/track.css">
+  <style>
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function trackParcel() {
+      // Get the tracking ID entered by the user
+      var trackingId = document.getElementById('trackingId').value;
+
+      // Simulate an API call to get the tracking information
+      // Replace this with your actual API call
+      // In this example, we're using a dummy result
+      var dummyResult = "Parcel " + trackingId + " is out for delivery.";
+
+      // Display the result
+      var resultElement = document.getElementById('result');
+      resultElement.innerText = dummyResult;
+    }
+  </script>
+</head>
+<body>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Courier Company Logo" width="200" height="71">
+            </div>
+            <nav>
+                <div class="topnav">
+                    <a href="Homepage.html">Home</a>
+                    <a href="Ship With ParcelPal.html">Ship With ParcelPal</a>
+                    <a href="contact.html">Contact Us</a>
+          </div>
+            </nav>
+        </header>
+      <table border="2px" width="100%" font-size="30px" border-color="black">
+        <tr>
+          <th><marquee>Delivering All Over The World. With The Best Prices</marquee></th>
+        </tr>
+      </table>
+  <h1>ParcelPal Courier Tracking</h1>
+
+  <label for="trackingId">Enter Tracking ID:</label>
+  <input type="text" id="trackingId" name="trackingId">
+
+  <button onclick="trackParcel()">Track</button>
+
+  <div class="result" id="result"></div>
+</body>
+</html>
